@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>cadAutorServlet</servlet-name>
+        <servlet-class>dac.anais.rest.servlets.cadAutorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cadArtigoServlet</servlet-name>
+        <servlet-class>dac.anais.rest.servlets.cadArtigoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cadVolumeServlet</servlet-name>
+        <servlet-class>dac.anais.rest.servlets.cadVolumeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consultaServlet</servlet-name>
+        <servlet-class>dac.anais.rest.servlets.consultaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cadAutorServlet</servlet-name>
+        <url-pattern>/cadAutorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cadArtigoServlet</servlet-name>
+        <url-pattern>/cadArtigoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cadVolumeServlet</servlet-name>
+        <url-pattern>/cadVolumeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consultaServlet</servlet-name>
+        <url-pattern>/consultaServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
